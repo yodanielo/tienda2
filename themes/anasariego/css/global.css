@@ -1,0 +1,233 @@
+/* ##################################################################################################
+        PRESTASHOP CSS
+################################################################################################## */
+
+@import url("grid_prestashop.css");
+
+/* ****************************************************************************
+                reset
+**************************************************************************** */
+*{
+    font-family: Arial,Helvetica,sans-serif;
+    color:#000;
+}
+html{background:#FFF;}
+body,div,dl,dt,dd,ul,ol,li,h1,h2,h3,h4,h5,h6,pre,code,form,fieldset,legend,input,button,textarea,p,blockquote,th,td,img{margin:0;padding:0; border:none;}
+table{border-collapse:collapse;border-spacing:0}
+fieldset,img{border:0}
+address,caption,cite,code,dfn,em,th,var,optgroup{font-style:inherit;font-weight:inherit}
+del,ins{text-decoration:none}
+caption,th{text-align:left}
+h1,h2,h3,h4,h5,h6{font-size:100%}
+q:before,q:after{content:''}
+abbr,acronym{border:0;font-variant:normal}
+sup{vertical-align:baseline}
+sub{vertical-align:baseline}
+legend{color:#000}
+input,button,textarea,select,optgroup,option{font-family:inherit;font-size:inherit;font-style:inherit;font-weight:inherit}
+input,button,textarea,select{font-size:100%}
+a {cursor:pointer}
+
+.clearfix:before,
+.clearfix:after {
+    content: ".";
+    display: block;
+    height: 0;
+    overflow: hidden
+}
+.clearfix:after {clear: both}
+.clearfix {zoom: 1}
+
+
+/* ************************************************************************************************
+                struture
+************************************************************************************************ */
+#page {}
+#header {z-index:10;}
+#columns {z-index:1}
+#left_column {}
+#center_column {}
+#right_column {}
+#footer {}
+
+
+/* ************************************************************************************************
+                generic style
+************************************************************************************************ */
+body{
+    font:normal 11px/14px Arial, Verdana, sans-serif;
+    color:#222;
+    background:#fff
+}
+#left_column{
+    width:25%;
+    /*background: #ccc;*/
+    overflow: hidden;
+    display:inline-block;
+}
+#left_column .block{
+    display:block;
+    overflow: hidden;
+    padding: 10px;
+}
+/* positionnement ****************************************************************************** */
+.hidden {display:none}
+.f_right {float:right}
+p.center {text-align:center}
+.clearBoth {clear:both}
+
+/* title *************************************************************************************** */
+h1 {
+    margin-bottom:20px;
+    font-size:24px;
+    line-height: 22px
+}
+h2 {
+    padding-bottom:20px;
+    font-size:18px
+}
+h3 {
+    padding-bottom:20px;
+    font-size:16px
+}
+h4 {
+    padding-bottom:20px;
+    font-size:14px
+}
+
+.hide-left-column #left_column {display:none}
+.hide-left-column #center_column {width:757px}
+
+/* text **************************************************************************************** */
+p {padding-bottom:20px}
+
+p em {font-style:italic}
+
+.warning {
+    margin:0 0 10px 0;
+    padding:10px;
+    border:1px solid #e6db55;
+    font-size:13px;
+    background:#ffffe0
+}
+.success {
+    margin:0 0 10px 0;
+    padding:10px;
+    border:1px solid #5cff74;
+    font-size:13px;
+    background: #d3ffab
+}
+.error {
+    margin:0 0 10px 0;
+    padding:10px;
+    border:1px solid #990000;
+    font-size:13px;
+    background:#ffcccc
+}
+.error ol {margin-left:20px}
+.error p.lnk {
+    margin-top:20px;
+    padding:0;
+    font-size:11px
+}
+.required {color:#990000}
+
+/* link **************************************************************************************** */
+a, a:active, a:visited {
+    color:#333;
+    text-decoration:none;
+    outline: medium none
+}
+a:hover {text-decoration:underline}
+
+/*buttons ************************************************************************************** */
+/*input.button_mini, input.button_small, input.button, input.button_large,
+input.button_mini_disabled, input.button_small_disabled, input.button_disabled, input.button_large_disabled,
+input.exclusive_mini, input.exclusive_small, input.exclusive, input.exclusive_large,
+input.exclusive_mini_disabled, input.exclusive_small_disabled, input.exclusive_disabled, input.exclusive_large_disabled,
+a.button_mini, a.button_small, a.button, a.button_large,
+a.exclusive_mini, a.exclusive_small, a.exclusive, a.exclusive_large,
+span.button_mini, span.button_small, span.button, span.button_large,
+span.exclusive_mini, span.exclusive_small, span.exclusive, span.exclusive_large, span.exclusive_large_disabled {
+        position:relative;
+        display:inline-block;
+        padding:5px 7px;
+        border:1px solid #cc9900;
+        -moz-border-radius: 3px;
+        -webkit-border-radius: 3px;
+        border-radius: 3px;
+        font-weight:bold;
+        color:#000;
+        background:url(../img/bg_bt.gif) repeat-x 0 0 #f4b61b;
+        cursor: pointer;
+}
+*:first-child+html input.button_mini, *:first-child+html input.button_small, *:first-child+html input.button, *:first-child+html input.button_large,
+*:first-child+html input.button_mini_disabled, *:first-child+html input.button_small_disabled, *:first-child+html input.button_disabled, *:first-child+html input.button_large_disabled,
+*:first-child+html input.exclusive_mini, *:first-child+html input.exclusive_small, *:first-child+html input.exclusive, *:first-child+html input.exclusive_large,
+*:first-child+html input.exclusive_mini_disabled, *:first-child+html input.exclusive_small_disabled, *:first-child+html input.exclusive_disabled, *:first-child+html input.exclusive_large_disabled {
+        border:none
+}
+
+*/
+#global{
+
+}
+#page {
+    position: relative;
+    top: 0;
+    left: 0;
+    z-index: 2;
+}
+/* ************************************************************************************************
+                header
+************************************************************************************************ */
+#header{
+    background:#333;
+    height: 50px;
+    /*width: 100%;*/
+    padding:0px 10px;
+}
+#menuderecha{
+    float:right;
+    white-space: nowrap;
+    height:24px;
+    padding: 13px;
+}
+/* ************************************************************************************************
+                footer
+************************************************************************************************ */
+#footer{
+    display: block;
+    height: 50px;
+    background: #333;
+    position: fixed;
+    bottom: 0px;
+    margin-top: -50px;
+    overflow: hidden;
+    width:100%;
+}
+#footer-inside{
+    display:block;
+    height:50px;
+    padding: 0px 10px;
+}
+#footer-copyright{
+    font-size: 12px;
+    line-height: 50px;
+    color:#fff;
+    float:left;
+    white-space: nowrap;
+}
+#videobackground{
+    position:fixed;
+    width:100%;
+    height:100%;
+    left:0px;
+    top:0px;
+    z-index:1;
+}
+#canvasbg{
+    position:absolute;
+    width:100%;
+    height:100%;
+}
